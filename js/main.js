@@ -1,1 +1,1 @@
-console.log('fuck my life');
+console.log('Starting up');
