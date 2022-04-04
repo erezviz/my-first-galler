@@ -24,7 +24,7 @@ function createProj(id, name, title, labels, url) {
 function createProjs() {
     gProjs = [
         createProj('touch-nums', 'Touch-Nums', 'Try this game, press sequential numbers.', ['games', 'numbers'], `https://erezviz.github.io/touch-nums/`),
-        createProj('mine-sweeper', 'My Minesweeper Project', ['mine sweeper', 'games', 'pc games', 'old pc games'], 'https://erezviz.github.io/Erez-Wiezel-Mine-Sweeper/')
+        createProj('mine-sweeper', 'Mine-Sweeper', 'My Minesweeper Project', ['mine sweeper', 'games', 'pc games', 'old pc games'], 'https://erezviz.github.io/Erez-Wiezel-Mine-Sweeper/')
     ]
 }
 
@@ -32,4 +32,8 @@ function createProjs() {
 function getCurrProj(modalNum) {
     modalNum = modalNum - 1
     return gProjs[modalNum]
+}
+
+function getProjById(projId) {
+    return gProjs.find(proj => projId === proj.id)
 }

@@ -33,7 +33,17 @@
 
         <!-- Contact -->
         <section id="contact">
-            <h4>Contact Me</h4>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address:</label>
+                <input type="email" class="email-input form-control" placeholder="name@example.com">
+                <label for="exampleFormControlInput1" class=" form-label">Subject:</label>
+                <input autocomplete="off" type="subject" class="subject-input form-control" placeholder="Your Subject Here">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Write to me here:</label>
+                <textarea class="text-area form-control" rows="3"></textarea>
+            </div>
+            <button type="button" onclick="onContactSubmit()" class="btn btn-primary">Send</button>
         </section>
 
     </aside>
@@ -81,40 +91,40 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Specialities</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">I have a few...</h3>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-amazon fa-stack-1x fa-inverse"></i>
             </span>
-                    <h4 class="service-heading">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Online-Shopping</h4>
+                    <p class="text-muted">Whenever you need some shopping done online, i'm there!</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-map fa-stack-1x fa-inverse"></i>
             </span>
-                    <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Can (still) Read A Map</h4>
+                    <p class="text-muted">So many GPS apps... Don't need'em</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
             </span>
-                    <h4 class="service-heading">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Keeping a secret</h4>
+                    <p class="text-muted">With end to end encryption (ears to anus), your secret is safe with me</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
+    <section class="bg-dark" id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -124,89 +134,9 @@
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <!-- <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/touch-nums.jpg" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Touch Nums</h4>
-                        <p class="text-muted">First game</p>
-                    </div> -->
+
                 </div>
-                <!-- <div class="pf2 col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/mine-sweeper.jpg" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Mine Sweeper</h4>
-                        <p class="text-muted">First Sprint Project</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Finish</h4>
-                        <p class="text-muted">Identity</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Lines</h4>
-                        <p class="text-muted">Branding</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Southwest</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Window</h4>
-                        <p class="text-muted">Photography</p>
-                    </div>
-                </div> -->
+
             </div>
         </div>
     </section>
@@ -288,7 +218,7 @@
         </div>
     </footer>
 
-    <!-- Portfolio Modals -->
+    <!-- Portfolio Modal -->
 
     <!-- Modal 1 -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -304,7 +234,7 @@
                         <div class="pfm1 col-lg-8 mx-auto">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
+                                <!-- <h2>Project Name</h2>
                                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                 <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
                                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
@@ -316,182 +246,7 @@
                                 </ul>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
-                    Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="pfm2 col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
-                                    maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-inline">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Explore</li>
-                                    <li>Category: Graphic Design</li>
-                                </ul>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
-                                    maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-inline">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Finish</li>
-                                    <li>Category: Identity</li>
-                                </ul>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
-                                    maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-inline">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Lines</li>
-                                    <li>Category: Branding</li>
-                                </ul>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
-                                    maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-inline">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Southwest</li>
-                                    <li>Category: Website Design</li>
-                                </ul>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
-                                    maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-inline">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Window</li>
-                                    <li>Category: Photography</li>
-                                </ul>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
+                    Close Project</button> -->
                             </div>
                         </div>
                     </div>
